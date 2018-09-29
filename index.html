@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>CHATQUEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="libs/normalize.css" rel="stylesheet">
+    <link href="libs/angular-material.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+    <script src="libs/angular-aria.min.js"></script>
+    <script src="libs/angular-material.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="ChatQuest">
+
+    <header class="header" layout="row" layout-xs="none" >
+        <div class="header-image" flex="60" flex-sm="66">
+        </div>
+        <div class="header-info">
+            <img class="header-info__logo" src="images/logo.png" alt="CHATQUEST">
+            <h1 class="header-info__title">
+                Откройте новые
+                возможности чат-ботов
+                для ваших рекламных
+                кампаний.
+            </h1>
+            <p class="header-info__description">
+                Создайте чат-квест
+                и перейдите на новый уровень
+                взаимодействия с аудиторией.
+            </p>
+            <div class="header-info__link-btn">
+                <div class="header-info__link">
+                    <span class="header-info__link-quote">[</span>
+                    <a class="header-info__link-href" href="#create-form">Создать чат-квест</a>
+                    <span class="header-info__link-quote">]</span>
+                </div>
+                <div class="header-info__img">
+                    <img src="images/dog.png" alt="dog">
+                </div>
+            </div>
+        </div>
+        <div class="header-image-sm">
+            <img class="header-info__logo" src="images/header-bg-mobile.png" alt="CHATQUEST">
+        </div>
+        <hr class="header-hr">
+    </header>
+    <main>
+        <div class="description-block">
+            <ul class="description-list" layout="row" layout-xs="none">
+                <li class="description-list__item" flex="33">
+                    <div class="description-list__item-img"></div>
+                    <h2 class="description-list__item-title">для бизнеса</h2>
+        
+                    <p class="description-list__item-text">
+                        Используйте самые передовые технологии Телеграм-ботов в ваших рекламных кампаниях. Создавайте
+                        увлекательные чат-квесты и разыгрывайте призы, скидки и купоны среди
+                        победителей.
+                    </p>
+        
+                    <div class="description-list__item-btn">
+                        <span class="description-list__item-btn-quote">[</span>
+                        <a class="description-list__item-btn-link" href="#business">узнать больше</a>
+                        <a class="description-list__item-btn-raquo" href="#business">&raquo;</a>
+                        <span class="description-list__item-btn-quote">]</span>
+                    </div>
+                </li>
+                <li class="description-list__item" flex="33">
+                    <div class="description-list__item-img"></div>
+                    <h2 class="description-list__item-title">для реалити-квестов</h2>
+        
+                    <p class="description-list__item-text">
+                        Расширяйте свою аудиторию и границы
+                        возможного с инструментами чат-квестов.
+                        Получайте больше прибыли от существующих
+                        квестов и создайте захватывающие новые приключения.
+                    </p>
+        
+                    <div class="description-list__item-btn">
+                        <span class="description-list__item-btn-quote">[</span>
+                        <a class="description-list__item-btn-link" href="#quest">узнать больше</a>
+                        <a class="description-list__item-btn-raquo" href="#quest">&raquo;</a>
+                        <span class="description-list__item-btn-quote">]</span>
+                    </div>
+                </li>
+                <li class="description-list__item" flex="33">
+                    <div class="description-list__item-img"></div>
+                    <h2 class="description-list__item-title">для искателей</h2>
+        
+                    <p class="description-list__item-text">
+                        Соревнуйтесь с друзьями в
+                        увлекательные чат-квесты,
+                        разгадывайте головоломки и проходите новые уровни,
+                        получая призы и награды. Первые зарегистрировшиеся получат дополнительные
+                        приемущества!
+                    </p>
+        
+                    <div class="description-list__item-btn">
+                        <span class="description-list__item-btn-quote">[</span>
+                        <a class="description-list__item-btn-link" href="#finder">узнать больше</a>
+                        <a class="description-list__item-btn-raquo" href="#finder">&raquo;</a>
+                        <span class="description-list__item-btn-quote">]</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="details-block">
+            <div class="details-item" id="business">
+                <div class="details-item__img business-img"></div>
+                <h2 class="details-item__title">ДЛЯ БИЗНЕСА</h2>
+                <div class="details-item__paragraph">
+                    Современные люди проводят более 20% времени за экраном своего мобильного телефона. Из этого времени львиная доля приходится на различные чат-приложения. Лидерами российского рынка являются Telegram, WhatsApp, Viber. Та компания, которая увеличит свое присутствие в этих приложениях и сможет успешно взаимодействовать со своей аудиторией через мессенджеры, получит коркурентное приемущество перед другими.
+                </div>
+                <div class="details-item__paragraph">
+                    Мы предлагаем вам начать использовать мессенджеры в своих рекламных кампаниях уже сейчас! Создавайте чат-игры (квесты) и продвигайте новые товары среди существующих
+                    пользователей, а также получите доступ к широкой базе новых пользователей. Увеличивайте интерес к своему бренду, разыгрывая призы и купоны среди победителей чат-квестов.
+                </div>
+                <div class="details-item__quote">
+                    - Что такое чат-квест? (выноска с оформлением а-ля цитата)
+                    Краткое описание того, что такое чат-квест. Скорее всего, строки на две-три.
+                    И слов эдак на 150-200
+                </div>
+                <div class="details-item__paragraph">
+                    Геймификация и многопользовательское взаиможействие помогут
+                    вам увеличить лояльность у существующих пользователей и заинтересовать новых.
+                </div>
+                <div class="details-item__btn business-btn">
+                    <span class="details-item__btn-quote">[</span>
+                    <a class="details-item__btn-link" href="#create-form">Создать чат-квест</a>
+                    <span class="details-item__btn-quote">]</span>
+                </div>
+                <div class="details-item__hr business-hr"></div>
+            </div>
+            <div class="details-item" id="quest">
+                <div class="details-item__img quest-img"></div>
+                <h2 class="details-item__title">ДЛЯ РЕАЛИТИ-КВЕСТОВ</h2>
+                <div class="details-item__paragraph">
+                    Современные люди проводят более 20% времени за экраном своего мобильного телефона. Из этого времени львиная доля приходится на различные чат-приложения. Лидерами российского рынка являются Telegram, WhatsApp, Viber. Та компания, которая увеличит свое присутствие в этих приложениях и сможет успешно взаимодействовать со своей аудиторией через мессенджеры, получит коркурентное приемущество перед другими.
+                </div>
+                <div class="details-item__paragraph">
+                    Мы предлагаем вам начать использовать мессенджеры в своих рекламных кампаниях уже сейчас! Создавайте чат-игры (квесты) и продвигайте новые товары среди существующих пользователей, а также получите доступ к широкой базе новых пользователей. Увеличивайте интерес к своему бренду, разыгрывая призы и купоны среди победителей чат-квестов.
+                </div>
+                <div class="details-item__btn quest-btn">
+                    <span class="details-item__btn-quote">[</span>
+                    <a class="details-item__btn-link" href="#create-form">Создать чат-квест</a>
+                    <span class="details-item__btn-quote">]</span>
+                </div>
+                <div class="details-item__hr quest-hr"></div>
+            </div>
+            <div class="details-item" id="finder">
+                <div class="details-item__img finder-img"></div>
+                <h2 class="details-item__title">ДЛЯ ИСКАТЕЛЕЙ</h2>
+                <div class="details-item__paragraph">
+                    Современные люди проводят более 20% времени за экраном своего мобильного телефона. Из этого времени львиная доля приходится на различные чат-приложения. Лидерами российского рынка являются Telegram, WhatsApp, Viber. Та компания, которая увеличит свое присутствие в этих приложениях и сможет успешно взаимодействовать со своей аудиторией через мессенджеры, получит коркурентное приемущество перед другими.
+                </div>
+                <div class="details-item__paragraph">
+                    Мы предлагаем вам начать использовать мессенджеры в своих рекламных кампаниях уже сейчас! Создавайте чат-игры (квесты) и продвигайте новые товары среди существующих пользователей, а также получите доступ к широкой базе новых пользователей. Увеличивайте интерес к своему бренду, разыгрывая призы и купоны среди победителей чат-квестов.
+                </div>
+                <div class="details-item__quote">
+                    - Что такое чат-квест? (выноска с оформлением а-ля цитата)
+                    Краткое описание того, что такое чат-квест. Скорее всего, строки на две-три.
+                    И слов эдак на 150-200
+                </div>
+                <div class="details-item__paragraph">
+                    Геймификация и многопользовательское взаиможействие помогут
+                    вам увеличить лояльность у существующих пользователей и заинтересовать новых.
+                </div>
+                <div class="details-item__btn finder-btn">
+                    <span class="details-item__btn-quote">[</span>
+                    <a class="details-item__btn-link" href="#create-form">Создать чат-квест</a>
+                    <span class="details-item__btn-quote">]</span>
+                </div>
+                <div class="details-item__hr finder-hr"></div>
+            </div>
+        </div>
+        <div class="create-form" id="create-form"  ng-controller="CreateFromCtrl">
+            <h2 class="create-form__title">Создать чат-квест</h2>
+            <p class="create-form__text">
+                Мы активно разрабатываем систему и хотим пригласить вас стать нашими первыми пользователями. Оставьте, пожалуйста, свои детали, и мы обязательно свяжемся с вами!
+            </p>
+            <p class="create-form__text">
+                Внимание, количество пользователей ограничено!
+            </p>
+            <form class="create-form__form" name="user">
+                <div class="create-form__md-block">
+                    <md-input-container class="md-block">
+                        <label class="create-form__form-label">Имя</label>
+                        <input class="create-form__form-input" ng-model="user.name" md-maxlength="30" md-select-on-focus="">
+                    </md-input-container>
+                </div>
+        
+                <div class="create-form__md-block">
+                    <md-input-container class="md-block">
+                        <label class="create-form__form-label">Email</label>
+                        <input class="create-form__form-input" ng-model="user.email" md-maxlength="30" md-select-on-focus="">
+                    </md-input-container>
+                </div>
+        
+                <div class="create-form__md-block">
+                    <md-input-container class="md-block">
+                        <md-select class="create-form__form-select" ng-model="selectedApplication" ng-model-options="{trackBy: '$value.id'}"
+                                   aria-label="Application">
+                            <md-option ng-value="item" ng-repeat="item in applications">{{::item.name}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <button class="create-form__form-btn">
+                    <span class="create-form__form-btn-quote">[</span>
+                    <span class="create-form__form-btn-link">Отправить запрос</span>
+                    <span class="create-form__form-btn-quote">]</span>
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-img">
+            <img src="images/footer-bg.png" alt="footer">
+        </div>
+    </footer>
+
+</body>
+</html>

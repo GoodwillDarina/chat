@@ -1,0 +1,287 @@
+.details-block {
+  max-width: 1100px;
+  width: 100%;
+  padding: 28px 14px ;
+  margin: auto;
+}
+
+.details-item {
+  clear: both;
+}
+.details-item__img {
+  size: 350px;
+  margin-top: 75px;
+  margin-right: 12px;
+  background: transparent url("../images/details.png") no-repeat;
+  background-size: cover;
+  float: left;
+
+  &.business-img {
+    background-position: 0 0;
+    height: 286px;
+  }
+  &.quest-img {
+    background-position: 0 -370px;
+  }
+  &.finder-img {
+    width: 302px;
+    margin-left: 48px;
+    background-position: 0 -640px;
+  }
+}
+.details-item__title {
+  font-size: 40px;
+  margin: 20px 0;
+  margin-left: 360px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $blue-title-color;
+}
+.details-item__paragraph {
+  font-size: 18px;
+  font-weight: normal;
+  color: $text-color;
+  margin-bottom: 14px;
+  line-height: 1.5;
+
+  .details-item__quote {
+    margin-left: 0;
+  }
+}
+
+.details-item__quote {
+  position: relative;
+  padding: 22px 44px;
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: $text-color;
+  clear: both;
+
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    bottom: 0;
+    size: 24px;
+    margin: auto;
+    background: transparent url("../images/quote.png") no-repeat;
+  }
+
+  &:before {
+    left: 0;
+    background-position: 0 0;
+  }
+
+  &:after {
+    right: 10px;
+    background-position: -40px 0;
+  }
+}
+.details-item__btn {
+  padding: 8px 0;
+  font-size: 24px;
+  color: $darkorange-color
+  text-align: center;
+  clear: both;
+
+  .details-item__btn-quote {
+    font-size: 42px;
+    line-height: 56px;
+    vertical-align: baseline;
+  }
+  .details-item__btn-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $darkorange-color;
+    vertical-align: baseline;
+  }
+
+  &.business-btn {
+    color: $darkorange-color;
+
+    .details-item__btn-link {
+      color: $darkorange-color;
+    }
+  }
+  &.quest-btn {
+    color: $lightpurple-color;
+
+    .details-item__btn-link {
+      color: $lightpurple-color;
+    }
+  }
+  &.finder-btn {
+    color: $purple-color
+
+    .details-item__btn-link {
+      color: $purple-color;
+    }
+  }
+}
+
+.details-item__hr {
+  position: relative;
+  width: 438px;
+  margin: 20px auto 55px;
+  border: 1px dotted $lightgrey-color;
+  opacity: 0.5;
+
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    size: 30px;
+    margin: auto;
+    background: transparent url("../images/flight-icon.png") no-repeat;
+  }
+
+  &:before {
+    left: -32px;
+    background-position: 0 0;
+  }
+
+  &:after {
+    right: -32px;
+    background-position: -40px 0;
+  }
+
+  &.business-hr:after {
+    display: none;
+  }
+  &.quest-hr:before {
+    display: none;
+  }
+  &.finder-hr {
+    margin-bottom: 0;
+  }
+}
+  
+@media screen and (max-width: 959px) {
+  .details-item__quote {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .details-item__img {
+    size: 300px;
+
+    &.business-img {
+      background-position: 0 0;
+      height: 286px;
+    }
+    &.quest-img {
+      background-position: 0 -314px;
+    }
+    &.finder-img {
+      width: 280px;
+      margin-left: 24px;
+      background-position: 0 -590px;
+    }
+  }
+  .details-item__title {
+    margin-left: 310px;
+    font-size: 36px;
+  }
+  .details-item__paragraph {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .details-item__quote {
+    margin-left: 20px;
+    font-size: 14px;
+
+    & + .details-item__paragraph {
+    }
+  }
+  .details-item__img {
+    size: 230px;
+    margin-top: 53px;
+
+    &.business-img {
+      background-position: 0 0;
+      height: 204px;
+    }
+    &.quest-img {
+      background-position: 0 -246px;
+      height: 210px;
+    }
+    &.finder-img {
+      width: 200px;
+      margin-left: 24px;
+      background-position: 0 -412px;
+    }
+  }
+  .details-item__title {
+    margin-left: 210px;
+    font-size: 24px;
+  }
+  .details-item__paragraph {
+    font-size: 14px;
+  }
+  .details-item__btn {
+    font-size: 18px;
+
+    .details-item__btn-quote {
+      font-size: 32px;
+    }
+  }
+  .details-item__hr {
+    max-width: 438px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .details-block {
+    padding: 20px 0;
+    margin: auto;
+  }
+  .details-item__title {
+    font-size: 22px;
+    padding: 0 20px;
+    margin-left: 0;
+  }
+  .details-item__paragraph {
+    padding: 0 20px;
+
+    .details-item__quote {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  .details-item__img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+
+    &.business-img {
+      height: 196px;
+    }
+    &.quest-img {
+      height: 200px;
+    }
+    &.finder-img {
+      height: 222px;
+      margin: 10px auto;
+    }
+  }
+  .details-item__quote {
+    padding: 10px 20px;
+    margin: 15px 0;
+    background-color: #00afaf;
+    color: $white-color;
+
+    &:after, &:before {
+      display: none;
+    }
+  }
+  .details-item__hr {
+    max-width: 230px;
+    width: 80%;
+    margin-bottom: 0;
+  }
+}

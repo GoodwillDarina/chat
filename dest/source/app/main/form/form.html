@@ -1,0 +1,38 @@
+<div class="create-form" id="create-form"  ng-controller="CreateFromCtrl">
+    <h2 class="create-form__title">Создать чат-квест</h2>
+    <p class="create-form__text">
+        Мы активно разрабатываем систему и хотим пригласить вас стать нашими первыми пользователями. Оставьте, пожалуйста, свои детали, и мы обязательно свяжемся с вами!
+    </p>
+    <p class="create-form__text">
+        Внимание, количество пользователей ограничено!
+    </p>
+    <form class="create-form__form" name="user">
+        <div class="create-form__md-block">
+            <md-input-container class="md-block">
+                <label class="create-form__form-label">Имя</label>
+                <input class="create-form__form-input" ng-model="user.name" md-maxlength="30" md-select-on-focus="">
+            </md-input-container>
+        </div>
+
+        <div class="create-form__md-block">
+            <md-input-container class="md-block">
+                <label class="create-form__form-label">Email</label>
+                <input class="create-form__form-input" ng-model="user.email" md-maxlength="30" md-select-on-focus="">
+            </md-input-container>
+        </div>
+
+        <div class="create-form__md-block">
+            <md-input-container class="md-block">
+                <md-select class="create-form__form-select" ng-model="selectedApplication" ng-model-options="{trackBy: '$value.id'}"
+                           aria-label="Application">
+                    <md-option ng-value="item" ng-repeat="item in applications">{{::item.name}}</md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+        <button class="create-form__form-btn">
+            <span class="create-form__form-btn-quote">[</span>
+            <span class="create-form__form-btn-link">Отправить запрос</span>
+            <span class="create-form__form-btn-quote">]</span>
+        </button>
+    </form>
+</div>

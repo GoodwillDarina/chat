@@ -1,0 +1,234 @@
+.header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-image-sm {
+  display: none;
+}
+.header-image {
+  position: relative;
+  height: 410px;
+  background: transparent url("../images/header-bg.png") no-repeat center bottom;
+  background-size: cover;
+  z-index: 100;
+}
+.header-info {
+  position: relative;
+  width: 540px;
+  padding: 11px 44px 22px;
+
+  .header-info__logo {
+    display: none;
+  }
+
+  .header-info__title {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+  .header-info__description {
+    padding: 0 34px;
+    margin: 22px 0 11px;
+    font-size: 18px;
+    font-weight: normal;
+    color: $text-color;
+  }
+  .header-info__link-btn {
+    position: absolute;
+    bottom: 121px;
+    left: 74px;
+  }
+  .header-info__link {
+    font-size: 28px;
+    color: $darkorange-color
+    text-align: center;
+
+    .header-info__link-quote {
+      font-size: 50px;
+      vertical-align: baseline;
+    }
+    .header-info__link-href {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $darkorange-color;
+      vertical-align: baseline;
+    }
+  }
+  .header-info__img {
+    position: absolute;
+    bottom: -119px;
+    left: 144px;
+    z-index: 100;
+  }
+}
+.header-hr {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background: $green-hr-color;
+}
+
+@media screen and (min-width: 1380px) {
+  .header-image {
+    min-height: 580px;
+    max-width: 1540px !important;
+    width: 66.66%;
+  }
+  .header-info .header-info__title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1285px) {
+  .header-info {
+    .header-info__title {
+      font-size: 26px;
+    }
+    .header-info__description {
+      padding: 0;
+      margin: 11px 0;
+    }
+    .header-info__link-btn {
+      position: relative;
+      bottom: auto;
+      left: auto;
+    }
+    .header-info__link {
+      font-size: 22px;
+      text-align: left;
+
+      .header-info__link-quote {
+        font-size: 42px;
+      }
+    }
+    .header-info__img {
+      width: 184px;
+      bottom: -102px;
+      left: 110px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .header-image {
+    height: 372px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .header-info .header-info__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 959px) {
+  .header-info {
+    padding: 11px 22px;
+    .header-info__title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .header-info__description{
+      font-size: 16px;
+    }
+    .header-info__link {
+      font-size: 18px;
+      text-align: left;
+
+      .header-info__link-quote {
+        font-size: 30px;
+      }
+    }
+    
+    .header-info__logo {
+      display: block;
+      width: 248px;
+    }
+  }
+  .header-image {
+    height: 320px;
+    background: transparent url("../images/header-bg-768.png") no-repeat center bottom;
+  }
+  .header-hr {
+    bottom: -8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 22px;
+  }
+  .header-info {
+    width: 300px;
+    .header-info__title {
+      font-size: 18px;
+      line-height: normal;
+    }
+    .header-info__description{
+      font-size: 12px;
+    }
+    .header-info__link {
+      margin-top: 40px;
+      font-size: 16px;
+      .header-info__link-quote {
+        font-size: 24px;
+      }
+    }
+  }
+  .header-image {
+    height: 300px;
+    background: transparent url("../images/header-bg-768.png") no-repeat center bottom;
+  }
+}
+@media screen and (max-width: 599px) {
+  .header {
+    display: block;
+  }
+  .header-image {
+    display: none;
+  }
+  .header-image-sm {
+    position: relative;
+    display: block;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .header-info {
+    display: block;
+    width: auto;
+    margin: auto;
+
+    .header-info__title {
+      font-size: 24px;
+    }
+    .header-info__description {
+      padding: 0 20px;
+      font-size: 18px;
+    }
+    .header-info__link-btn {
+      margin: auto;
+    }
+    .header-info__link {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 0;
+
+      .header-info__link-quote {
+        font-size: 38px;
+      }
+    }
+  }
+}

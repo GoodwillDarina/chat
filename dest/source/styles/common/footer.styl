@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  size: 100% 98px;
+  background: linear-gradient(to top, $blue-footer-color 60%, $bluegreen-footer-color 0%);
+
+  .footer-img {
+    position: absolute;
+    top: -174px;
+    right: 144px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .footer .footer-img {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer-img {
+    size: 140px auto;
+    top: -102px;
+    right: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer  {
+    background: linear-gradient(to top, $blue-footer-color 75%, $bluegreen-footer-color 0%)
+
+    .footer-img {
+      width: 80px;
+      top: -58px;
+      right: 0;
+    }
+  }
+}
